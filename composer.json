@@ -1,0 +1,74 @@
+{
+    "name": "rawnod/laravel-exceptions",
+    "version": "1.0.0",
+    "description": "A professional Laravel package for centralized API exception handling with unified response structure",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "api",
+        "exceptions",
+        "error-handling",
+        "json",
+        "rest"
+    ],
+    "authors": [
+        {
+            "name": "Rawnod"
+        }
+    ],
+    "homepage": "https://github.com/rawnoq/laravel-exceptions",
+    "support": {
+        "issues": "https://github.com/rawnoq/laravel-exceptions/issues",
+        "source": "https://github.com/rawnoq/laravel-exceptions"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/rawnoq/laravel-exceptions.git"
+    },
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^11.0|^12.0",
+        "illuminate/http": "^11.0|^12.0",
+        "illuminate/database": "^11.0|^12.0",
+        "rawnoq/laravel-api-response": "^1.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^10.0|^11.0",
+        "phpunit/phpunit": "^11.0"
+    },
+    "suggest": {
+        "spatie/laravel-query-builder": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rawnod\\Exceptions\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Rawnod\\Exceptions\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Rawnod\\Exceptions\\Providers\\ExceptionsServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage",
+        "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
+
