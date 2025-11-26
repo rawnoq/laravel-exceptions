@@ -1,5 +1,5 @@
 {
-    "name": "rawnod/laravel-exceptions",
+    "name": "rawnoq/laravel-exceptions",
     "version": "1.0.0",
     "description": "A professional Laravel package for centralized API exception handling with unified response structure",
     "type": "library",
